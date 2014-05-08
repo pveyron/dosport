@@ -1,4 +1,6 @@
-package com.lanjie.dosport;
+package com.lanjie.dosport.activity;
+
+import com.lanjie.dosport.R;
 
 import android.os.Bundle;
 import android.app.Activity;
