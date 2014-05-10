@@ -27,4 +27,7 @@
 	<bean id="passwordEncoder"
 		class="org.springframework.security.authentication.encoding.Md5PasswordEncoder" />
 
+	<bean id="remotingServiceFactory"
+		class="com.dosport.remoting.httpinvoker.BaseRemotingServiceFactory" />
+
 </beans>

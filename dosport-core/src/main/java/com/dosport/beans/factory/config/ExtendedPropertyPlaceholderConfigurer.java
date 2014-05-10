@@ -85,7 +85,7 @@ public class ExtendedPropertyPlaceholderConfigurer extends PropertyPlaceholderCo
 				}
 				InputStream is = null;
 				try {
-					String runEnv = System.getenv("RUN_ENV");
+					String runEnv = "dev";
 					if (location.getFilename().indexOf("." + runEnv + ".") > 0) {
 						is = location.getInputStream();
 						this.propertiesPersister.load(props, is);

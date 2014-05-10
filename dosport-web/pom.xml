@@ -21,6 +21,11 @@
 			<artifactId>dosport-core</artifactId>
 		</dependency>
 		<dependency>
+			<groupId>com.dosport</groupId>
+			<artifactId>dosport-interface</artifactId>
+		</dependency>
+		
+		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 		</dependency>
@@ -127,7 +132,6 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-test</artifactId>
-			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.aspectj</groupId>

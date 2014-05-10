@@ -8,7 +8,10 @@ import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.BeanFactoryAware;
 import org.springframework.beans.factory.InitializingBean;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.Assert;
+
+import com.dosport.beans.factory.config.ExtendedPropertyPlaceholderConfigurer;
 
 /**
  * 远程调用服务工厂.
@@ -29,6 +32,19 @@ public class BaseRemotingServiceFactory implements Serializable, InitializingBea
 	private String currentServiceUrl = null;
 	// bean工厂
 	private BeanFactory beanFactory;
+
+	@Autowired
+	private ExtendedPropertyPlaceholderConfigurer propertyConfigurer;
+
+	public <T> T getMainSiteService(Class<T> clazz) {
+		try {
+			String serviceUrl = propertyConfigurer.mergeProperties().getProperty("remote.url");
+			return this.getServiceByUrl(serviceUrl, null, clazz);
+		} catch (Exception e) {
+			logger.error("远程调用错误", e);
+		}
+		return null;
+	}
 
 	/**
 	 * 传入节点ID调用指定节点service服务.
@@ -140,7 +156,6 @@ public class BaseRemotingServiceFactory implements Serializable, InitializingBea
 			// 首字母小写,得到helloService
 			beanName = beanName.substring(0, 1).toLowerCase() + beanName.substring(1);
 		}
-		beanName += "Remoting";
 		return beanName;
 	}
 

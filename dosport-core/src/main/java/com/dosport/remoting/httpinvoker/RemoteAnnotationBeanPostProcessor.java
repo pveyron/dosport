@@ -5,26 +5,25 @@ import org.springframework.beans.factory.config.InstantiationAwareBeanPostProces
 import org.springframework.core.Ordered;
 import org.springframework.core.PriorityOrdered;
 import org.springframework.core.annotation.AnnotationUtils;
+import org.springframework.stereotype.Component;
 
-public class RemoteAnnotationBeanPostProcessor extends
-		InstantiationAwareBeanPostProcessorAdapter implements PriorityOrdered {
+@Component
+public class RemoteAnnotationBeanPostProcessor extends InstantiationAwareBeanPostProcessorAdapter implements
+		PriorityOrdered {
 
 	private int order = Ordered.LOWEST_PRECEDENCE - 1;
 
 	@Override
-	public Object postProcessAfterInitialization(Object bean, String beanName)
-			throws BeansException {
+	public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
 
-		Remote remote = AnnotationUtils.findAnnotation(bean.getClass(),
-				Remote.class);
+		Remote remote = AnnotationUtils.findAnnotation(bean.getClass(), Remote.class);
 
 		Object resultBean = bean;
 
 		if (null != remote) {
 
 			DqlHttpInvokerServiceExporter httpInvokerServiceExporter = new DqlHttpInvokerServiceExporter();
-			httpInvokerServiceExporter.setServiceInterface(remote
-					.remoteInterface());
+			httpInvokerServiceExporter.setServiceInterface(remote.remoteInterface());
 			httpInvokerServiceExporter.setService(bean);
 			httpInvokerServiceExporter.afterPropertiesSet();
 			resultBean = httpInvokerServiceExporter;
@@ -34,8 +33,7 @@ public class RemoteAnnotationBeanPostProcessor extends
 	}
 
 	@Override
-	public Object postProcessBeforeInitialization(Object bean, String beanName)
-			throws BeansException {
+	public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
 		return bean;
 	}
 

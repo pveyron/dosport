@@ -4,13 +4,13 @@
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
 	id="WebApp_ID" version="2.5">
 	<display-name>Archetype Created Web Application</display-name>
-
+	
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
 		<param-value>classpath:spring/applicationContext*.xml</param-value>
 	</context-param>
-    
-    <filter>
+	
+	<filter>
 		<filter-name>encodingFilter</filter-name>
 		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
 		<init-param>
@@ -25,15 +25,24 @@
 	<filter-mapping>
 		<filter-name>encodingFilter</filter-name>
 		<url-pattern>/*</url-pattern>
-		<dispatcher>REQUEST</dispatcher>
 	</filter-mapping>
 	
+	<!-- Struts2 and sitemesh -->
 	<filter>
 		<filter-name>struts-prepare</filter-name>
 		<filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareFilter</filter-class>
 	</filter>
 	<filter-mapping>
 		<filter-name>struts-prepare</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
+	<filter>
+		<filter-name>sitemesh</filter-name>
+		<filter-class>com.opensymphony.sitemesh.webapp.SiteMeshFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>sitemesh</filter-name>
 		<url-pattern>/*</url-pattern>
 	</filter-mapping>
 	
@@ -45,10 +54,7 @@
 		<filter-name>struts-execute</filter-name>
 		<url-pattern>/*</url-pattern>
 	</filter-mapping>
-    
-    <listener>
-        <listener-class>org.springframework.web.util.Log4jConfigListener</listener-class>
-    </listener>
+
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
@@ -56,10 +62,11 @@
 	<listener>   
 		<listener-class>org.springframework.web.util.IntrospectorCleanupListener</listener-class>    
 	</listener>
-	
-	<!-- session超时定义,单位为分钟 -->  
-	<session-config>    
-		<session-timeout>180</session-timeout>  
+
+    
+    <!-- session超时定义,单位为分钟  -->
+	<session-config>
+		<session-timeout>180</session-timeout>
 	</session-config>
 	
 	<!-- error page -->  
@@ -80,4 +87,10 @@
 		<location>/error/403.jsp</location>   
 	</error-page>
 	
+	<servlet>
+		<servlet-name>JspSupportServlet</servlet-name>
+		<servlet-class>org.apache.struts2.views.JspSupportServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+  
 </web-app>

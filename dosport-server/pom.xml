@@ -21,9 +21,15 @@
 			<artifactId>dosport-core</artifactId>
 		</dependency>
 		<dependency>
+			<groupId>com.dosport</groupId>
+			<artifactId>dosport-interface</artifactId>
+		</dependency>
+		
+		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 		</dependency>
+		
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
