@@ -1,0 +1,56 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.dosport</groupId>
+		<artifactId>dosport-parent</artifactId>
+		<version>1.0.0</version>
+		<relativePath>../dosport-parent/pom.xml</relativePath>
+	</parent>
+
+	<artifactId>dosport-domain</artifactId>
+	<version>${dosportcore.version}</version>
+	<packaging>jar</packaging>
+	<name>dosport-domain</name>
+	<url>http://maven.apache.org</url>
+
+	<dependencies>
+		<!-- utils begin -->
+		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>commons-beanutils</groupId>
+			<artifactId>commons-beanutils</artifactId>
+		</dependency>
+		<!-- utils end -->
+		
+		<!-- begin 添加hibernate的支持 -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<type>jar</type>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-annotations</artifactId>
+			<type>jar</type>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-ehcache</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-validator</artifactId>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-search</artifactId>
+		</dependency>
+		<!-- end 添加hibernate的支持 -->
+	</dependencies>
+</project>

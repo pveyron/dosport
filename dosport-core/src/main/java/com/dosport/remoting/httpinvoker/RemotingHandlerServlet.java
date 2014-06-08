@@ -33,7 +33,7 @@ public class RemotingHandlerServlet extends HttpServlet {
 		try {
 			WebApplicationContext ctx = WebApplicationContextUtils.getWebApplicationContext(getServletContext());
 			Object invokeService = ctx.getBean(this.getInvokeBean(req.getRequestURI()));
-			if (invokeService != null) {
+			if (invokeService != null && (invokeService instanceof DqlHttpInvokerServiceExporter)) {
 				DqlHttpInvokerServiceExporter exporter = (DqlHttpInvokerServiceExporter) invokeService;
 				exporter.handleRequest(req, resp);
 			}

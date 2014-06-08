@@ -1,4 +1,4 @@
-package com.dosport.beans.factory.config;
+package com.dosport.spring.beans.factory.config;
 
 import java.io.IOException;
 import java.io.InputStream;

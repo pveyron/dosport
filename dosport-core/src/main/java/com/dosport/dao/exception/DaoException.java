@@ -1,4 +1,4 @@
-package com.dosport.system.exception;
+package com.dosport.dao.exception;
 
 /**
  * DAO层异常报告.

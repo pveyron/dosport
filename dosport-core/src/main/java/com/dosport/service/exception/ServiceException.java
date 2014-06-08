@@ -1,4 +1,4 @@
-package com.dosport.system.exception;
+package com.dosport.service.exception;
 
 /**
  * 业务层操作异常.

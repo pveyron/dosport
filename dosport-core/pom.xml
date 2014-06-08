@@ -58,7 +58,7 @@
 		</dependency>
 		<!-- utils end -->
 
-		<!-- 添加hibernate的支持 -->
+		<!-- begin 添加hibernate的支持 -->
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-core</artifactId>
@@ -82,6 +82,7 @@
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-search</artifactId>
 		</dependency>
+		<!-- end 添加hibernate的支持 -->
 
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -148,5 +149,13 @@
 			<groupId>com.googlecode.ehcache-spring-annotations</groupId>
 			<artifactId>ehcache-spring-annotations</artifactId>
 		</dependency>
+
+		<!-- memcached begin -->
+		<dependency>
+			<groupId>net.spy</groupId>
+			<artifactId>spymemcached</artifactId>
+			<type>jar</type>
+		</dependency>
+		<!-- memcached end -->
 	</dependencies>
 </project>

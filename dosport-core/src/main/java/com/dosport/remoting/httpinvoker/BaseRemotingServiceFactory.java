@@ -11,7 +11,7 @@ import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.Assert;
 
-import com.dosport.beans.factory.config.ExtendedPropertyPlaceholderConfigurer;
+import com.dosport.spring.beans.factory.config.ExtendedPropertyPlaceholderConfigurer;
 
 /**
  * 远程调用服务工厂.

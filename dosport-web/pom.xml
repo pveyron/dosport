@@ -14,7 +14,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>dosport-web</name>
 	<url>http://maven.apache.org</url>
-	
+
 	<dependencies>
 		<dependency>
 			<groupId>com.dosport</groupId>
@@ -24,7 +24,17 @@
 			<groupId>com.dosport</groupId>
 			<artifactId>dosport-interface</artifactId>
 		</dependency>
-		
+		<dependency>
+			<groupId>com.dosport</groupId>
+			<artifactId>dosport-domain</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>

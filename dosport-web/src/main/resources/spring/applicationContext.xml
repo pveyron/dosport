@@ -12,7 +12,7 @@
 	<task:annotation-driven />
 
 	<bean id="propertyPlaceholderConfigurer"
-		class="com.dosport.beans.factory.config.ExtendedPropertyPlaceholderConfigurer">
+		class="com.dosport.spring.beans.factory.config.ExtendedPropertyPlaceholderConfigurer">
 		<property name="systemPropertiesModeName" value="SYSTEM_PROPERTIES_MODE_OVERRIDE" />
 		<property name="ignoreResourceNotFound" value="true" />
 		<property name="locations">

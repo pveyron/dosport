@@ -35,6 +35,7 @@
 	<dependencyManagement>
 
 		<dependencies>
+			<!-- begin dosport -->
 			<dependency>
 				<groupId>com.dosport</groupId>
 				<artifactId>dosport-core</artifactId>
@@ -45,6 +46,13 @@
 				<artifactId>dosport-interface</artifactId>
 				<version>${dosportcore.version}</version>
 			</dependency>
+			<dependency>
+				<groupId>com.dosport</groupId>
+				<artifactId>dosport-domain</artifactId>
+				<version>${dosportcore.version}</version>
+			</dependency>
+			<!-- end dosport -->
+			
 			<dependency>
 				<groupId>javax.servlet</groupId>
 				<artifactId>servlet-api</artifactId>
@@ -390,6 +398,15 @@
 				<artifactId>ehcache-spring-annotations</artifactId>
 				<version>1.1.2</version>
 			</dependency>
+			
+			<!-- memcached begin-->
+			<dependency>
+				<groupId>net.spy</groupId>
+				<artifactId>spymemcached</artifactId>
+				<version>2.10.0</version>
+				<type>jar</type>
+			</dependency>
+			<!-- memcached end -->
 		</dependencies>
 	</dependencyManagement>
 	<build>
@@ -497,6 +514,8 @@
 		</plugins>
 	</build>
 	<modules>
-		<module>../dql-core</module>
+		<module>../dosport-core</module>
+		<module>../dosport-interface</module>
+		<module>../dosport-domain</module>
 	</modules>
 </project>

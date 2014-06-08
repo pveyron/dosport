@@ -3,7 +3,7 @@ package com.dosport.service.remoting;
 import org.springframework.stereotype.Service;
 
 import com.dosport.remoting.httpinvoker.Remote;
-import com.dosport.system.exception.ServiceException;
+import com.dosport.service.exception.ServiceException;
 
 /**
  * 远程调用测试Impl.
