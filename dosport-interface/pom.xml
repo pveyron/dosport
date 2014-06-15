@@ -20,6 +20,10 @@
 			<groupId>com.dosport</groupId>
 			<artifactId>dosport-core</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>com.dosport</groupId>
+			<artifactId>dosport-domain</artifactId>
+		</dependency>
 		
 		<dependency>
 			<groupId>junit</groupId>
