@@ -10,6 +10,7 @@
 		<param-value>classpath:spring/applicationContext*.xml</param-value>
 	</context-param>
 	
+	<!-- begin Spring Encoding filter -->
 	<filter>
 		<filter-name>encodingFilter</filter-name>
 		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
@@ -25,10 +26,23 @@
 	<filter-mapping>
 		<filter-name>encodingFilter</filter-name>
 		<url-pattern>/*</url-pattern>
+		<dispatcher>REQUEST</dispatcher>
 	</filter-mapping>
+	<!-- end Spring Encoding filter -->
+	
+	<!-- begin SpringSecurity filter -->      
+	<!-- <filter>          
+		<filter-name>springSecurityFilterChain</filter-name>
+		<filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>     
+	</filter>      
+	<filter-mapping>          
+		<filter-name>springSecurityFilterChain</filter-name>         
+		<url-pattern>/*</url-pattern>     
+	</filter-mapping> -->
+	<!-- end SpringSecurity filter --> 
 	
 	<!-- Struts2 and sitemesh -->
-	<filter>
+	<!-- <filter>
 		<filter-name>struts-prepare</filter-name>
 		<filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareFilter</filter-class>
 	</filter>
@@ -52,6 +66,14 @@
 	</filter>
 	<filter-mapping>
 		<filter-name>struts-execute</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping> -->
+	<filter>
+		<filter-name>struts2</filter-name>
+		<filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>struts2</filter-name>
 		<url-pattern>/*</url-pattern>
 	</filter-mapping>
 

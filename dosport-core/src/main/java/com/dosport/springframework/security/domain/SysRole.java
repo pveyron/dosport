@@ -1,4 +1,4 @@
-package com.dosport.security.domain;
+package com.dosport.springframework.security.domain;
 
 import java.io.Serializable;
 import java.util.LinkedHashSet;
@@ -17,30 +17,30 @@ import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
 /**
- * 系统权限.
+ * 系统角色.
  * 
  * @author pwl
  * 
  */
 @Entity
-@Table(name = "SYS_AUTHORITIE")
-public class SysAuthoritie implements Serializable {
+@Table(name = "SYS_ROLE")
+public class SysRole implements Serializable {
 
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 2666643546535577429L;
+	private static final long serialVersionUID = 3103732221220017146L;
 
 	private Long id;
 	private String name;
 	private Integer enabled;
 
 	@ManyToMany(cascade = { CascadeType.PERSIST, CascadeType.MERGE })
-	@JoinTable(name = "SYS_AUTHORITIES_RESOURCES", joinColumns = { @JoinColumn(name = "AUTHORITY_ID") }, inverseJoinColumns = { @JoinColumn(name = "RESOURCE_ID") })
-	private Set<SysResource> resources = new LinkedHashSet<SysResource>();
+	@JoinTable(name = "SYS_ROLES_AUTHORITIES", joinColumns = { @JoinColumn(name = "ROLE_ID") }, inverseJoinColumns = { @JoinColumn(name = "AUTHORITY_ID") })
+	private Set<SysAuthority> authorities = new LinkedHashSet<SysAuthority>();
 
-	@ManyToMany(cascade = { CascadeType.PERSIST, CascadeType.MERGE }, fetch = FetchType.LAZY, mappedBy = "authorities")
-	private Set<SysRole> roles = new LinkedHashSet<SysRole>();
+	@ManyToMany(cascade = { CascadeType.PERSIST, CascadeType.MERGE }, fetch = FetchType.LAZY, mappedBy = "roles")
+	private Set<SysUser> users = new LinkedHashSet<SysUser>();
 
 	@Id
 	@Column(name = "ID")
@@ -71,20 +71,12 @@ public class SysAuthoritie implements Serializable {
 		this.enabled = enabled;
 	}
 
-	public Set<SysResource> getResources() {
-		return resources;
+	public Set<SysUser> getUsers() {
+		return users;
 	}
 
-	public void setResources(Set<SysResource> resources) {
-		this.resources = resources;
-	}
-
-	public Set<SysRole> getRoles() {
-		return roles;
-	}
-
-	public void setRoles(Set<SysRole> roles) {
-		this.roles = roles;
+	public void setUsers(Set<SysUser> users) {
+		this.users = users;
 	}
 
 }

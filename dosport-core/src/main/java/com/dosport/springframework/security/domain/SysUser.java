@@ -1,4 +1,4 @@
-package com.dosport.security.domain;
+package com.dosport.springframework.security.domain;
 
 import java.io.Serializable;
 import java.util.LinkedHashSet;

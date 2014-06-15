@@ -11,7 +11,7 @@
 
 	<!-- 附件. -->
 	<bean id="fileUploadComponent" class="com.dosport.struts2.attachment.FileUploadComponent">
-		<property name="fileRootPath">${file.root.path}</property>
+		<property name="fileRootPath" value="${file.root.path}" />
 	</bean>
 
 </beans>

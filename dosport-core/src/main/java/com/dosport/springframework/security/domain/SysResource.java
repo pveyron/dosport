@@ -1,4 +1,4 @@
-package com.dosport.security.domain;
+package com.dosport.springframework.security.domain;
 
 import java.io.Serializable;
 import java.util.LinkedHashSet;
@@ -36,7 +36,7 @@ public class SysResource implements Serializable {
 	private Integer enabled;
 
 	@ManyToMany(cascade = { CascadeType.PERSIST, CascadeType.MERGE }, fetch = FetchType.LAZY, mappedBy = "resources")
-	private Set<SysAuthoritie> authorities = new LinkedHashSet<SysAuthoritie>();
+	private Set<SysAuthority> authorities = new LinkedHashSet<SysAuthority>();
 
 	@Id
 	@Column(name = "ID")
@@ -85,11 +85,11 @@ public class SysResource implements Serializable {
 		this.enabled = enabled;
 	}
 
-	public Set<SysAuthoritie> getAuthorities() {
+	public Set<SysAuthority> getAuthorities() {
 		return authorities;
 	}
 
-	public void setAuthorities(Set<SysAuthoritie> authorities) {
+	public void setAuthorities(Set<SysAuthority> authorities) {
 		this.authorities = authorities;
 	}
 

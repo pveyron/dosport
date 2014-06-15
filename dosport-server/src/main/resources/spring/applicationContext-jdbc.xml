@@ -40,6 +40,11 @@
 		</property>
 		<property name="packagesToScan">
 			<list>
+				<value>com.dosport.springframework.security.domain</value>
+				<value>com.dosport.domain.constant</value>
+				<value>com.dosport.domain.psn</value>
+				<value>com.dosport.domain.activity</value>
+				<value>com.dosport.domain.attachment</value>
 			</list>
 		</property>
 	</bean>
