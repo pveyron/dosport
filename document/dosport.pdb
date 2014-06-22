@@ -1513,7 +1513,7 @@ CARD 0 新宋体,8,N</a:FontList>
 <o:ReferenceSymbol Id="o12">
 <a:CreationDate>1400687335</a:CreationDate>
 <a:ModificationDate>1400687335</a:ModificationDate>
-<a:Rect>((-63184,2950), (-52888,12825))</a:Rect>
+<a:Rect>((-63013,2950), (-52888,12825))</a:Rect>
 <a:ListOfPoints>((-63013,2950),(-52888,12825))</a:ListOfPoints>
 <a:ArrowStyle>1</a:ArrowStyle>
 <a:LineColor>12615680</a:LineColor>
@@ -1533,7 +1533,7 @@ CARD 0 新宋体,8,N</a:FontList>
 <o:ReferenceSymbol Id="o15">
 <a:CreationDate>1400687338</a:CreationDate>
 <a:ModificationDate>1400687338</a:ModificationDate>
-<a:Rect>((-70721,2880), (-60971,13350))</a:Rect>
+<a:Rect>((-70213,2880), (-62069,13350))</a:Rect>
 <a:ListOfPoints>((-62069,2880),(-70213,13350))</a:ListOfPoints>
 <a:ArrowStyle>1</a:ArrowStyle>
 <a:LineColor>12615680</a:LineColor>
@@ -1553,7 +1553,7 @@ CARD 0 新宋体,8,N</a:FontList>
 <o:ReferenceSymbol Id="o18">
 <a:CreationDate>1400687467</a:CreationDate>
 <a:ModificationDate>1400687558</a:ModificationDate>
-<a:Rect>((-79354,2850), (-68104,12675))</a:Rect>
+<a:Rect>((-78917,2850), (-68246,12675))</a:Rect>
 <a:ListOfPoints>((-78917,2850),(-68246,12675))</a:ListOfPoints>
 <a:ArrowStyle>1</a:ArrowStyle>
 <a:LineColor>12615680</a:LineColor>
@@ -1573,7 +1573,7 @@ CARD 0 新宋体,8,N</a:FontList>
 <o:ReferenceSymbol Id="o21">
 <a:CreationDate>1400687469</a:CreationDate>
 <a:ModificationDate>1400687558</a:ModificationDate>
-<a:Rect>((-88178,2625), (-76928,12750))</a:Rect>
+<a:Rect>((-87521,2625), (-78944,12750))</a:Rect>
 <a:ListOfPoints>((-78944,2625),(-87521,12750))</a:ListOfPoints>
 <a:ArrowStyle>1</a:ArrowStyle>
 <a:LineColor>12615680</a:LineColor>
@@ -3061,10 +3061,10 @@ TableComment 0 新宋体,8,N</a:FontList>
 <o:Column Id="o131">
 <a:ObjectID>42EF6973-DFB7-4106-9EB8-1A614F2D77DC</a:ObjectID>
 <a:Name>附件id</a:Name>
-<a:Code>附件id</a:Code>
+<a:Code>id</a:Code>
 <a:CreationDate>1400864684</a:CreationDate>
 <a:Creator>pwl</a:Creator>
-<a:ModificationDate>1402712166</a:ModificationDate>
+<a:ModificationDate>1402924307</a:ModificationDate>
 <a:Modifier>pwl</a:Modifier>
 <a:DataType>bigint</a:DataType>
 <a:Mandatory>1</a:Mandatory>
@@ -3072,20 +3072,20 @@ TableComment 0 新宋体,8,N</a:FontList>
 <o:Column Id="o132">
 <a:ObjectID>109148F7-BB60-455A-9FD8-3F19DF121CC1</a:ObjectID>
 <a:Name>创建人</a:Name>
-<a:Code>创建人</a:Code>
+<a:Code>psn_Id</a:Code>
 <a:CreationDate>1400864684</a:CreationDate>
 <a:Creator>pwl</a:Creator>
-<a:ModificationDate>1402712166</a:ModificationDate>
+<a:ModificationDate>1402924307</a:ModificationDate>
 <a:Modifier>pwl</a:Modifier>
 <a:DataType>bigint</a:DataType>
 </o:Column>
 <o:Column Id="o133">
 <a:ObjectID>1C2C64E9-502F-43C6-9A74-333CADBF2FF0</a:ObjectID>
 <a:Name>附件名称</a:Name>
-<a:Code>附件名称</a:Code>
+<a:Code>name</a:Code>
 <a:CreationDate>1400864684</a:CreationDate>
 <a:Creator>pwl</a:Creator>
-<a:ModificationDate>1400921785</a:ModificationDate>
+<a:ModificationDate>1402924307</a:ModificationDate>
 <a:Modifier>pwl</a:Modifier>
 <a:DataType>varchar(255)</a:DataType>
 <a:Length>255</a:Length>
@@ -3093,10 +3093,10 @@ TableComment 0 新宋体,8,N</a:FontList>
 <o:Column Id="o134">
 <a:ObjectID>72B364E5-F7D2-42EF-B30B-88F781A035F3</a:ObjectID>
 <a:Name>保存文件名</a:Name>
-<a:Code>保存文件名</a:Code>
+<a:Code>save_name</a:Code>
 <a:CreationDate>1400921773</a:CreationDate>
 <a:Creator>pwl</a:Creator>
-<a:ModificationDate>1402712134</a:ModificationDate>
+<a:ModificationDate>1402924307</a:ModificationDate>
 <a:Modifier>pwl</a:Modifier>
 <a:DataType>varchar(35)</a:DataType>
 <a:Length>35</a:Length>
@@ -3104,21 +3104,21 @@ TableComment 0 新宋体,8,N</a:FontList>
 <o:Column Id="o135">
 <a:ObjectID>C8BAAF4C-1A2F-4E3F-961A-49A88162582F</a:ObjectID>
 <a:Name>附件类型</a:Name>
-<a:Code>附件类型</a:Code>
+<a:Code>type</a:Code>
 <a:CreationDate>1400921831</a:CreationDate>
 <a:Creator>pwl</a:Creator>
-<a:ModificationDate>1400921943</a:ModificationDate>
+<a:ModificationDate>1402924307</a:ModificationDate>
 <a:Modifier>pwl</a:Modifier>
 <a:DataType>varchar(10)</a:DataType>
 <a:Length>10</a:Length>
 </o:Column>
 <o:Column Id="o136">
 <a:ObjectID>80FFF49C-B26F-4B7E-BA14-99668D5B789D</a:ObjectID>
-<a:Name>创建时间</a:Name>
-<a:Code>创建时间</a:Code>
+<a:Name>上传时间</a:Name>
+<a:Code>upload_date</a:Code>
 <a:CreationDate>1400921798</a:CreationDate>
 <a:Creator>pwl</a:Creator>
-<a:ModificationDate>1402724097</a:ModificationDate>
+<a:ModificationDate>1402924551</a:ModificationDate>
 <a:Modifier>pwl</a:Modifier>
 <a:DataType>timestamp</a:DataType>
 </o:Column>

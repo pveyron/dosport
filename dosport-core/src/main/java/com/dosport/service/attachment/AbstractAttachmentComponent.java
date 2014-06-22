@@ -203,6 +203,15 @@ public abstract class AbstractAttachmentComponent {
 		fis.close();
 	}
 
+	public void deleteFile(String basePath, String filePath, String fileSaveName) {
+
+		String fileFullPath = this.getFileFullPath(basePath, filePath, fileSaveName);
+		File file = new File(fileFullPath);
+		if (file.exists()) {
+			file.delete();
+		}
+	}
+
 	public String[] getAcceptFileTypes() {
 		return acceptFileTypes;
 	}

@@ -1513,7 +1513,7 @@ CARD 0 新宋体,8,N</a:FontList>
 <o:ReferenceSymbol Id="o12">
 <a:CreationDate>1400687335</a:CreationDate>
 <a:ModificationDate>1400687335</a:ModificationDate>
-<a:Rect>((-63184,2950), (-52888,12825))</a:Rect>
+<a:Rect>((-63013,2950), (-52888,12825))</a:Rect>
 <a:ListOfPoints>((-63013,2950),(-52888,12825))</a:ListOfPoints>
 <a:ArrowStyle>1</a:ArrowStyle>
 <a:LineColor>12615680</a:LineColor>
@@ -1533,7 +1533,7 @@ CARD 0 新宋体,8,N</a:FontList>
 <o:ReferenceSymbol Id="o15">
 <a:CreationDate>1400687338</a:CreationDate>
 <a:ModificationDate>1400687338</a:ModificationDate>
-<a:Rect>((-70721,2880), (-60971,13350))</a:Rect>
+<a:Rect>((-70213,2880), (-62069,13350))</a:Rect>
 <a:ListOfPoints>((-62069,2880),(-70213,13350))</a:ListOfPoints>
 <a:ArrowStyle>1</a:ArrowStyle>
 <a:LineColor>12615680</a:LineColor>
@@ -1553,7 +1553,7 @@ CARD 0 新宋体,8,N</a:FontList>
 <o:ReferenceSymbol Id="o18">
 <a:CreationDate>1400687467</a:CreationDate>
 <a:ModificationDate>1400687558</a:ModificationDate>
-<a:Rect>((-79354,2850), (-68104,12675))</a:Rect>
+<a:Rect>((-78917,2850), (-68246,12675))</a:Rect>
 <a:ListOfPoints>((-78917,2850),(-68246,12675))</a:ListOfPoints>
 <a:ArrowStyle>1</a:ArrowStyle>
 <a:LineColor>12615680</a:LineColor>
@@ -1573,7 +1573,7 @@ CARD 0 新宋体,8,N</a:FontList>
 <o:ReferenceSymbol Id="o21">
 <a:CreationDate>1400687469</a:CreationDate>
 <a:ModificationDate>1400687558</a:ModificationDate>
-<a:Rect>((-88178,2625), (-76928,12750))</a:Rect>
+<a:Rect>((-87521,2625), (-78944,12750))</a:Rect>
 <a:ListOfPoints>((-78944,2625),(-87521,12750))</a:ListOfPoints>
 <a:ArrowStyle>1</a:ArrowStyle>
 <a:LineColor>12615680</a:LineColor>
@@ -1777,7 +1777,7 @@ TableComment 0 新宋体,8,N</a:FontList>
 <o:TableSymbol Id="o33">
 <a:CreationDate>1400687833</a:CreationDate>
 <a:ModificationDate>1400687833</a:ModificationDate>
-<a:Rect>((-4794,4327), (6124,18475))</a:Rect>
+<a:Rect>((-4794,4739), (6124,18063))</a:Rect>
 <a:LineColor>12615680</a:LineColor>
 <a:FillColor>16570034</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
@@ -2035,10 +2035,10 @@ TableComment 0 新宋体,8,N</a:FontList>
 <a:Code>signature</a:Code>
 <a:CreationDate>1400515916</a:CreationDate>
 <a:Creator>pwl</a:Creator>
-<a:ModificationDate>1400515916</a:ModificationDate>
+<a:ModificationDate>1403014946</a:ModificationDate>
 <a:Modifier>pwl</a:Modifier>
-<a:DataType>varchar(255)</a:DataType>
-<a:Length>255</a:Length>
+<a:DataType>varchar(200)</a:DataType>
+<a:Length>200</a:Length>
 </o:Column>
 <o:Column Id="o55">
 <a:ObjectID>A8B75956-A7A9-4CAA-AAE5-896C44588F5B</a:ObjectID>
@@ -2067,10 +2067,10 @@ TableComment 0 新宋体,8,N</a:FontList>
 <a:Code>address</a:Code>
 <a:CreationDate>1400515916</a:CreationDate>
 <a:Creator>pwl</a:Creator>
-<a:ModificationDate>1400515916</a:ModificationDate>
+<a:ModificationDate>1403014946</a:ModificationDate>
 <a:Modifier>pwl</a:Modifier>
-<a:DataType>varchar(200)</a:DataType>
-<a:Length>200</a:Length>
+<a:DataType>varchar(150)</a:DataType>
+<a:Length>150</a:Length>
 </o:Column>
 <o:Column Id="o58">
 <a:ObjectID>309C5899-8081-4839-932A-E4D3368107D8</a:ObjectID>
@@ -2630,7 +2630,7 @@ TableComment 0 新宋体,8,N</a:FontList>
 <a:Code>activity</a:Code>
 <a:CreationDate>1400687833</a:CreationDate>
 <a:Creator>pwl</a:Creator>
-<a:ModificationDate>1402411418</a:ModificationDate>
+<a:ModificationDate>1403022614</a:ModificationDate>
 <a:Modifier>pwl</a:Modifier>
 <c:Columns>
 <o:Column Id="o97">
@@ -2728,27 +2728,16 @@ TableComment 0 新宋体,8,N</a:FontList>
 </o:Column>
 <o:Column Id="o106">
 <a:ObjectID>2797BB50-535F-41FD-8A07-27904D166890</a:ObjectID>
-<a:Name>公交站台</a:Name>
-<a:Code>bus_stop</a:Code>
+<a:Name>交通指引</a:Name>
+<a:Code>traffic_guide</a:Code>
 <a:CreationDate>1400859117</a:CreationDate>
 <a:Creator>pwl</a:Creator>
-<a:ModificationDate>1400859117</a:ModificationDate>
+<a:ModificationDate>1403022614</a:ModificationDate>
 <a:Modifier>pwl</a:Modifier>
-<a:DataType>varchar(40)</a:DataType>
-<a:Length>40</a:Length>
+<a:DataType>varchar(100)</a:DataType>
+<a:Length>100</a:Length>
 </o:Column>
 <o:Column Id="o107">
-<a:ObjectID>E035EBCA-57E5-4C26-B4C1-C1F1E6031109</a:ObjectID>
-<a:Name>公交</a:Name>
-<a:Code>bus</a:Code>
-<a:CreationDate>1400859194</a:CreationDate>
-<a:Creator>pwl</a:Creator>
-<a:ModificationDate>1400859194</a:ModificationDate>
-<a:Modifier>pwl</a:Modifier>
-<a:DataType>varchar(30)</a:DataType>
-<a:Length>30</a:Length>
-</o:Column>
-<o:Column Id="o108">
 <a:ObjectID>A993B9C8-488B-4E2C-93E6-A77D742F9324</a:ObjectID>
 <a:Name>创建时间</a:Name>
 <a:Code>create_date</a:Code>
@@ -2758,18 +2747,18 @@ TableComment 0 新宋体,8,N</a:FontList>
 <a:Modifier>pwl</a:Modifier>
 <a:DataType>timestamp</a:DataType>
 </o:Column>
-<o:Column Id="o109">
+<o:Column Id="o108">
 <a:ObjectID>E21ABFDC-9192-4A1C-8C88-FCC995EF1916</a:ObjectID>
 <a:Name>备注</a:Name>
 <a:Code>note</a:Code>
 <a:CreationDate>1400689289</a:CreationDate>
 <a:Creator>pwl</a:Creator>
-<a:ModificationDate>1400689309</a:ModificationDate>
+<a:ModificationDate>1403022328</a:ModificationDate>
 <a:Modifier>pwl</a:Modifier>
-<a:DataType>varchar(255)</a:DataType>
-<a:Length>255</a:Length>
+<a:DataType>varchar(300)</a:DataType>
+<a:Length>300</a:Length>
 </o:Column>
-<o:Column Id="o110">
+<o:Column Id="o109">
 <a:ObjectID>EAFCC778-CF14-44D6-9B27-5ACDF56F0F16</a:ObjectID>
 <a:Name>状态</a:Name>
 <a:Code>status</a:Code>
@@ -2779,7 +2768,7 @@ TableComment 0 新宋体,8,N</a:FontList>
 <a:Modifier>pwl</a:Modifier>
 <a:DataType>smallint</a:DataType>
 </o:Column>
-<o:Column Id="o111">
+<o:Column Id="o110">
 <a:ObjectID>B52C77B6-CBEC-4006-A232-2FD4DC20D302</a:ObjectID>
 <a:Name>参与人数</a:Name>
 <a:Code>participator_count</a:Code>
@@ -2791,7 +2780,7 @@ TableComment 0 新宋体,8,N</a:FontList>
 </o:Column>
 </c:Columns>
 <c:Keys>
-<o:Key Id="o112">
+<o:Key Id="o111">
 <a:ObjectID>A5F97440-91F2-45D3-9168-A36C04CFB284</a:ObjectID>
 <a:Name>Key_1</a:Name>
 <a:Code>Key_1</a:Code>
@@ -2805,7 +2794,7 @@ TableComment 0 新宋体,8,N</a:FontList>
 </o:Key>
 </c:Keys>
 <c:PrimaryKey>
-<o:Key Ref="o112"/>
+<o:Key Ref="o111"/>
 </c:PrimaryKey>
 </o:Table>
 <o:Table Id="o36">
@@ -2817,7 +2806,7 @@ TableComment 0 新宋体,8,N</a:FontList>
 <a:ModificationDate>1400688415</a:ModificationDate>
 <a:Modifier>pwl</a:Modifier>
 <c:Columns>
-<o:Column Id="o113">
+<o:Column Id="o112">
 <a:ObjectID>4418B923-50AD-49F1-8979-5FB39A5EB5D1</a:ObjectID>
 <a:Name>运动id</a:Name>
 <a:Code>id</a:Code>
@@ -2828,7 +2817,7 @@ TableComment 0 新宋体,8,N</a:FontList>
 <a:DataType>smallint</a:DataType>
 <a:Mandatory>1</a:Mandatory>
 </o:Column>
-<o:Column Id="o114">
+<o:Column Id="o113">
 <a:ObjectID>E7C40A65-C465-4AC7-8912-02293A46140F</a:ObjectID>
 <a:Name>名称</a:Name>
 <a:Code>name</a:Code>
@@ -2839,7 +2828,7 @@ TableComment 0 新宋体,8,N</a:FontList>
 <a:DataType>varchar(30)</a:DataType>
 <a:Length>30</a:Length>
 </o:Column>
-<o:Column Id="o115">
+<o:Column Id="o114">
 <a:ObjectID>FE044ECE-08DB-44E2-BBE2-97E129ED8F37</a:ObjectID>
 <a:Name>描述</a:Name>
 <a:Code>desc</a:Code>
@@ -2852,7 +2841,7 @@ TableComment 0 新宋体,8,N</a:FontList>
 </o:Column>
 </c:Columns>
 <c:Keys>
-<o:Key Id="o116">
+<o:Key Id="o115">
 <a:ObjectID>E0F9F378-241F-4ADF-9BAF-0EEEBCB3809F</a:ObjectID>
 <a:Name>Key_1</a:Name>
 <a:Code>Key_1</a:Code>
@@ -2861,12 +2850,12 @@ TableComment 0 新宋体,8,N</a:FontList>
 <a:ModificationDate>1400688415</a:ModificationDate>
 <a:Modifier>pwl</a:Modifier>
 <c:Key.Columns>
-<o:Column Ref="o113"/>
+<o:Column Ref="o112"/>
 </c:Key.Columns>
 </o:Key>
 </c:Keys>
 <c:PrimaryKey>
-<o:Key Ref="o116"/>
+<o:Key Ref="o115"/>
 </c:PrimaryKey>
 </o:Table>
 <o:Table Id="o38">
@@ -2878,7 +2867,7 @@ TableComment 0 新宋体,8,N</a:FontList>
 <a:ModificationDate>1402807634</a:ModificationDate>
 <a:Modifier>pwl</a:Modifier>
 <c:Columns>
-<o:Column Id="o117">
+<o:Column Id="o116">
 <a:ObjectID>9AD87E3E-8555-4DC9-8025-8714DE389AC1</a:ObjectID>
 <a:Name>id</a:Name>
 <a:Code>id</a:Code>
@@ -2889,7 +2878,7 @@ TableComment 0 新宋体,8,N</a:FontList>
 <a:DataType>bigint</a:DataType>
 <a:Mandatory>1</a:Mandatory>
 </o:Column>
-<o:Column Id="o118">
+<o:Column Id="o117">
 <a:ObjectID>315E4600-8E08-4ABB-BF9B-FB39CDA7B4EF</a:ObjectID>
 <a:Name>人员id</a:Name>
 <a:Code>psn_id</a:Code>
@@ -2899,7 +2888,7 @@ TableComment 0 新宋体,8,N</a:FontList>
 <a:Modifier>pwl</a:Modifier>
 <a:DataType>bigint</a:DataType>
 </o:Column>
-<o:Column Id="o119">
+<o:Column Id="o118">
 <a:ObjectID>532567CF-9C8D-421A-B13A-E6DFF13D4BDA</a:ObjectID>
 <a:Name>客户端</a:Name>
 <a:Code>client</a:Code>
@@ -2909,7 +2898,7 @@ TableComment 0 新宋体,8,N</a:FontList>
 <a:Modifier>pwl</a:Modifier>
 <a:DataType>smallint</a:DataType>
 </o:Column>
-<o:Column Id="o120">
+<o:Column Id="o119">
 <a:ObjectID>46F718CB-71E8-4238-AD97-C20624BB76FF</a:ObjectID>
 <a:Name>登录时间</a:Name>
 <a:Code>login_time</a:Code>
@@ -2919,7 +2908,7 @@ TableComment 0 新宋体,8,N</a:FontList>
 <a:Modifier>pwl</a:Modifier>
 <a:DataType>timestamp</a:DataType>
 </o:Column>
-<o:Column Id="o121">
+<o:Column Id="o120">
 <a:ObjectID>19F5828A-96A4-4CC0-A0B6-60E480D885D6</a:ObjectID>
 <a:Name>ip地址</a:Name>
 <a:Code>ip</a:Code>
@@ -2930,7 +2919,7 @@ TableComment 0 新宋体,8,N</a:FontList>
 <a:DataType>varchar(15)</a:DataType>
 <a:Length>15</a:Length>
 </o:Column>
-<o:Column Id="o122">
+<o:Column Id="o121">
 <a:ObjectID>6F65EDC2-DC3F-4B8F-A400-8C00F08AFB9B</a:ObjectID>
 <a:Name>经度</a:Name>
 <a:Code>longitude</a:Code>
@@ -2940,7 +2929,7 @@ TableComment 0 新宋体,8,N</a:FontList>
 <a:Modifier>pwl</a:Modifier>
 <a:DataType>double</a:DataType>
 </o:Column>
-<o:Column Id="o123">
+<o:Column Id="o122">
 <a:ObjectID>2BFCB9BF-56E0-4687-B93C-E6F33032C2B9</a:ObjectID>
 <a:Name>纬度</a:Name>
 <a:Code>latitution</a:Code>
@@ -2952,7 +2941,7 @@ TableComment 0 新宋体,8,N</a:FontList>
 </o:Column>
 </c:Columns>
 <c:Keys>
-<o:Key Id="o124">
+<o:Key Id="o123">
 <a:ObjectID>1E4E0CF4-5F55-4298-9662-4D4D500976C8</a:ObjectID>
 <a:Name>Key_1</a:Name>
 <a:Code>Key_1</a:Code>
@@ -2961,12 +2950,12 @@ TableComment 0 新宋体,8,N</a:FontList>
 <a:ModificationDate>1400688625</a:ModificationDate>
 <a:Modifier>pwl</a:Modifier>
 <c:Key.Columns>
-<o:Column Ref="o117"/>
+<o:Column Ref="o116"/>
 </c:Key.Columns>
 </o:Key>
 </c:Keys>
 <c:PrimaryKey>
-<o:Key Ref="o124"/>
+<o:Key Ref="o123"/>
 </c:PrimaryKey>
 </o:Table>
 <o:Table Id="o40">
@@ -2978,7 +2967,7 @@ TableComment 0 新宋体,8,N</a:FontList>
 <a:ModificationDate>1400689539</a:ModificationDate>
 <a:Modifier>pwl</a:Modifier>
 <c:Columns>
-<o:Column Id="o125">
+<o:Column Id="o124">
 <a:ObjectID>CB81E80A-51C3-4FBF-B864-1273E48E98A7</a:ObjectID>
 <a:Name>id</a:Name>
 <a:Code>id</a:Code>
@@ -2989,7 +2978,7 @@ TableComment 0 新宋体,8,N</a:FontList>
 <a:DataType>bigint</a:DataType>
 <a:Mandatory>1</a:Mandatory>
 </o:Column>
-<o:Column Id="o126">
+<o:Column Id="o125">
 <a:ObjectID>DD036B50-A61D-4AA8-9271-34DFDE0D9688</a:ObjectID>
 <a:Name>人员id</a:Name>
 <a:Code>psn_id</a:Code>
@@ -3000,7 +2989,7 @@ TableComment 0 新宋体,8,N</a:FontList>
 <a:DataType>bigint</a:DataType>
 <a:Mandatory>1</a:Mandatory>
 </o:Column>
-<o:Column Id="o127">
+<o:Column Id="o126">
 <a:ObjectID>EDA629FA-ACDC-4044-B5EE-BF1F59F65A30</a:ObjectID>
 <a:Name>活动id</a:Name>
 <a:Code>activity_id</a:Code>
@@ -3010,7 +2999,7 @@ TableComment 0 新宋体,8,N</a:FontList>
 <a:Modifier>pwl</a:Modifier>
 <a:DataType>bigint</a:DataType>
 </o:Column>
-<o:Column Id="o128">
+<o:Column Id="o127">
 <a:ObjectID>6F18033C-CDE8-49A6-9732-37188C3A3577</a:ObjectID>
 <a:Name>参与时间</a:Name>
 <a:Code>participate_date</a:Code>
@@ -3020,7 +3009,7 @@ TableComment 0 新宋体,8,N</a:FontList>
 <a:Modifier>pwl</a:Modifier>
 <a:DataType>timestamp</a:DataType>
 </o:Column>
-<o:Column Id="o129">
+<o:Column Id="o128">
 <a:ObjectID>2E87C33D-162A-4D29-B44F-449F64E3FDB3</a:ObjectID>
 <a:Name>状态</a:Name>
 <a:Code>status</a:Code>
@@ -3032,7 +3021,7 @@ TableComment 0 新宋体,8,N</a:FontList>
 </o:Column>
 </c:Columns>
 <c:Keys>
-<o:Key Id="o130">
+<o:Key Id="o129">
 <a:ObjectID>7DF39489-6E70-4F26-9F9F-376D021631D1</a:ObjectID>
 <a:Name>Key_1</a:Name>
 <a:Code>Key_1</a:Code>
@@ -3041,12 +3030,12 @@ TableComment 0 新宋体,8,N</a:FontList>
 <a:ModificationDate>1400689436</a:ModificationDate>
 <a:Modifier>pwl</a:Modifier>
 <c:Key.Columns>
-<o:Column Ref="o125"/>
+<o:Column Ref="o124"/>
 </c:Key.Columns>
 </o:Key>
 </c:Keys>
 <c:PrimaryKey>
-<o:Key Ref="o130"/>
+<o:Key Ref="o129"/>
 </c:PrimaryKey>
 </o:Table>
 <o:Table Id="o42">
@@ -3058,73 +3047,73 @@ TableComment 0 新宋体,8,N</a:FontList>
 <a:ModificationDate>1400921831</a:ModificationDate>
 <a:Modifier>pwl</a:Modifier>
 <c:Columns>
-<o:Column Id="o131">
+<o:Column Id="o130">
 <a:ObjectID>42EF6973-DFB7-4106-9EB8-1A614F2D77DC</a:ObjectID>
 <a:Name>附件id</a:Name>
-<a:Code>附件id</a:Code>
+<a:Code>id</a:Code>
 <a:CreationDate>1400864684</a:CreationDate>
 <a:Creator>pwl</a:Creator>
-<a:ModificationDate>1402712166</a:ModificationDate>
+<a:ModificationDate>1402924307</a:ModificationDate>
 <a:Modifier>pwl</a:Modifier>
 <a:DataType>bigint</a:DataType>
 <a:Mandatory>1</a:Mandatory>
 </o:Column>
-<o:Column Id="o132">
+<o:Column Id="o131">
 <a:ObjectID>109148F7-BB60-455A-9FD8-3F19DF121CC1</a:ObjectID>
 <a:Name>创建人</a:Name>
-<a:Code>创建人</a:Code>
+<a:Code>psn_Id</a:Code>
 <a:CreationDate>1400864684</a:CreationDate>
 <a:Creator>pwl</a:Creator>
-<a:ModificationDate>1402712166</a:ModificationDate>
+<a:ModificationDate>1402924307</a:ModificationDate>
 <a:Modifier>pwl</a:Modifier>
 <a:DataType>bigint</a:DataType>
 </o:Column>
-<o:Column Id="o133">
+<o:Column Id="o132">
 <a:ObjectID>1C2C64E9-502F-43C6-9A74-333CADBF2FF0</a:ObjectID>
 <a:Name>附件名称</a:Name>
-<a:Code>附件名称</a:Code>
+<a:Code>name</a:Code>
 <a:CreationDate>1400864684</a:CreationDate>
 <a:Creator>pwl</a:Creator>
-<a:ModificationDate>1400921785</a:ModificationDate>
+<a:ModificationDate>1402924307</a:ModificationDate>
 <a:Modifier>pwl</a:Modifier>
 <a:DataType>varchar(255)</a:DataType>
 <a:Length>255</a:Length>
 </o:Column>
-<o:Column Id="o134">
+<o:Column Id="o133">
 <a:ObjectID>72B364E5-F7D2-42EF-B30B-88F781A035F3</a:ObjectID>
 <a:Name>保存文件名</a:Name>
-<a:Code>保存文件名</a:Code>
+<a:Code>save_name</a:Code>
 <a:CreationDate>1400921773</a:CreationDate>
 <a:Creator>pwl</a:Creator>
-<a:ModificationDate>1402712134</a:ModificationDate>
+<a:ModificationDate>1402924307</a:ModificationDate>
 <a:Modifier>pwl</a:Modifier>
 <a:DataType>varchar(35)</a:DataType>
 <a:Length>35</a:Length>
 </o:Column>
-<o:Column Id="o135">
+<o:Column Id="o134">
 <a:ObjectID>C8BAAF4C-1A2F-4E3F-961A-49A88162582F</a:ObjectID>
 <a:Name>附件类型</a:Name>
-<a:Code>附件类型</a:Code>
+<a:Code>type</a:Code>
 <a:CreationDate>1400921831</a:CreationDate>
 <a:Creator>pwl</a:Creator>
-<a:ModificationDate>1400921943</a:ModificationDate>
+<a:ModificationDate>1402924307</a:ModificationDate>
 <a:Modifier>pwl</a:Modifier>
 <a:DataType>varchar(10)</a:DataType>
 <a:Length>10</a:Length>
 </o:Column>
-<o:Column Id="o136">
+<o:Column Id="o135">
 <a:ObjectID>80FFF49C-B26F-4B7E-BA14-99668D5B789D</a:ObjectID>
-<a:Name>创建时间</a:Name>
-<a:Code>创建时间</a:Code>
+<a:Name>上传时间</a:Name>
+<a:Code>upload_date</a:Code>
 <a:CreationDate>1400921798</a:CreationDate>
 <a:Creator>pwl</a:Creator>
-<a:ModificationDate>1402724097</a:ModificationDate>
+<a:ModificationDate>1402924551</a:ModificationDate>
 <a:Modifier>pwl</a:Modifier>
 <a:DataType>timestamp</a:DataType>
 </o:Column>
 </c:Columns>
 <c:Keys>
-<o:Key Id="o137">
+<o:Key Id="o136">
 <a:ObjectID>3A8B2362-A970-4FB2-B217-643FBFADBD97</a:ObjectID>
 <a:Name>Key_1</a:Name>
 <a:Code>Key_1</a:Code>
@@ -3133,12 +3122,12 @@ TableComment 0 新宋体,8,N</a:FontList>
 <a:ModificationDate>1400921736</a:ModificationDate>
 <a:Modifier>pwl</a:Modifier>
 <c:Key.Columns>
-<o:Column Ref="o131"/>
+<o:Column Ref="o130"/>
 </c:Key.Columns>
 </o:Key>
 </c:Keys>
 <c:PrimaryKey>
-<o:Key Ref="o137"/>
+<o:Key Ref="o136"/>
 </c:PrimaryKey>
 </o:Table>
 <o:Table Id="o44">
@@ -3150,7 +3139,7 @@ TableComment 0 新宋体,8,N</a:FontList>
 <a:ModificationDate>1401033241</a:ModificationDate>
 <a:Modifier>pwl</a:Modifier>
 <c:Columns>
-<o:Column Id="o138">
+<o:Column Id="o137">
 <a:ObjectID>B9E2E9FA-DAB8-4520-9131-A339107C10F6</a:ObjectID>
 <a:Name>id</a:Name>
 <a:Code>id</a:Code>
@@ -3160,7 +3149,7 @@ TableComment 0 新宋体,8,N</a:FontList>
 <a:Modifier>pwl</a:Modifier>
 <a:DataType>bigint</a:DataType>
 </o:Column>
-<o:Column Id="o139">
+<o:Column Id="o138">
 <a:ObjectID>446662E8-090D-4CEC-8291-DEB03D7239CD</a:ObjectID>
 <a:Name>活动id</a:Name>
 <a:Code>activity_id</a:Code>
@@ -3171,7 +3160,7 @@ TableComment 0 新宋体,8,N</a:FontList>
 <a:DataType>bigint</a:DataType>
 <a:Mandatory>1</a:Mandatory>
 </o:Column>
-<o:Column Id="o140">
+<o:Column Id="o139">
 <a:ObjectID>5537C738-318B-4A8B-A08D-2144C64F6B1D</a:ObjectID>
 <a:Name>附件id</a:Name>
 <a:Code>attachment_id</a:Code>
@@ -3184,7 +3173,7 @@ TableComment 0 新宋体,8,N</a:FontList>
 </o:Column>
 </c:Columns>
 <c:Keys>
-<o:Key Id="o141">
+<o:Key Id="o140">
 <a:ObjectID>98AB64DA-0C3A-409B-A4B1-6A084D22ADFE</a:ObjectID>
 <a:Name>Key_1</a:Name>
 <a:Code>Key_1</a:Code>
@@ -3193,13 +3182,13 @@ TableComment 0 新宋体,8,N</a:FontList>
 <a:ModificationDate>1400902973</a:ModificationDate>
 <a:Modifier>pwl</a:Modifier>
 <c:Key.Columns>
+<o:Column Ref="o138"/>
 <o:Column Ref="o139"/>
-<o:Column Ref="o140"/>
 </c:Key.Columns>
 </o:Key>
 </c:Keys>
 <c:PrimaryKey>
-<o:Key Ref="o141"/>
+<o:Key Ref="o140"/>
 </c:PrimaryKey>
 </o:Table>
 <o:Table Id="o46">
@@ -3221,7 +3210,7 @@ TableComment 0 新宋体,8,N</a:FontList>
 <a:ModificationDate>1400921995</a:ModificationDate>
 <a:Modifier>pwl</a:Modifier>
 <c:Columns>
-<o:Column Id="o142">
+<o:Column Id="o141">
 <a:ObjectID>8C686939-51AF-4856-BE7F-3BC17CEB221C</a:ObjectID>
 <a:Name>附件id</a:Name>
 <a:Code>attachment_id</a:Code>
@@ -3232,7 +3221,7 @@ TableComment 0 新宋体,8,N</a:FontList>
 <a:DataType>bigint</a:DataType>
 <a:Mandatory>1</a:Mandatory>
 </o:Column>
-<o:Column Id="o143">
+<o:Column Id="o142">
 <a:ObjectID>8F85F547-99F0-4096-8F76-92258562E6AD</a:ObjectID>
 <a:Name>场所id</a:Name>
 <a:Code>place_id</a:Code>
@@ -3245,7 +3234,7 @@ TableComment 0 新宋体,8,N</a:FontList>
 </o:Column>
 </c:Columns>
 <c:Keys>
-<o:Key Id="o144">
+<o:Key Id="o143">
 <a:ObjectID>7A4A33B5-5BA2-4055-8F7D-498229E263AF</a:ObjectID>
 <a:Name>Key_1</a:Name>
 <a:Code>Key_1</a:Code>
@@ -3254,13 +3243,13 @@ TableComment 0 新宋体,8,N</a:FontList>
 <a:ModificationDate>1400921724</a:ModificationDate>
 <a:Modifier>pwl</a:Modifier>
 <c:Key.Columns>
+<o:Column Ref="o141"/>
 <o:Column Ref="o142"/>
-<o:Column Ref="o143"/>
 </c:Key.Columns>
 </o:Key>
 </c:Keys>
 <c:PrimaryKey>
-<o:Key Ref="o144"/>
+<o:Key Ref="o143"/>
 </c:PrimaryKey>
 </o:Table>
 </c:Tables>
@@ -3286,7 +3275,7 @@ TableComment 0 新宋体,8,N</a:FontList>
 <o:Key Ref="o73"/>
 </c:ParentKey>
 <c:Joins>
-<o:ReferenceJoin Id="o145">
+<o:ReferenceJoin Id="o144">
 <a:ObjectID>F5A22226-DB41-49F1-896E-D39083E6EECA</a:ObjectID>
 <a:CreationDate>1400687120</a:CreationDate>
 <a:Creator>pwl</a:Creator>
@@ -3322,7 +3311,7 @@ TableComment 0 新宋体,8,N</a:FontList>
 <o:Key Ref="o83"/>
 </c:ParentKey>
 <c:Joins>
-<o:ReferenceJoin Id="o146">
+<o:ReferenceJoin Id="o145">
 <a:ObjectID>FA1EC728-ABAC-48FA-82AD-F702F18BA1D6</a:ObjectID>
 <a:CreationDate>1400687257</a:CreationDate>
 <a:Creator>pwl</a:Creator>
@@ -3358,7 +3347,7 @@ TableComment 0 新宋体,8,N</a:FontList>
 <o:Key Ref="o83"/>
 </c:ParentKey>
 <c:Joins>
-<o:ReferenceJoin Id="o147">
+<o:ReferenceJoin Id="o146">
 <a:ObjectID>989A3D27-FEF7-4702-BB7D-90E78DCABDD4</a:ObjectID>
 <a:CreationDate>1400687335</a:CreationDate>
 <a:Creator>pwl</a:Creator>
@@ -3394,7 +3383,7 @@ TableComment 0 新宋体,8,N</a:FontList>
 <o:Key Ref="o87"/>
 </c:ParentKey>
 <c:Joins>
-<o:ReferenceJoin Id="o148">
+<o:ReferenceJoin Id="o147">
 <a:ObjectID>C06A6645-76DB-44D9-B8C4-EB39166925AA</a:ObjectID>
 <a:CreationDate>1400687338</a:CreationDate>
 <a:Creator>pwl</a:Creator>
@@ -3430,7 +3419,7 @@ TableComment 0 新宋体,8,N</a:FontList>
 <o:Key Ref="o87"/>
 </c:ParentKey>
 <c:Joins>
-<o:ReferenceJoin Id="o149">
+<o:ReferenceJoin Id="o148">
 <a:ObjectID>C4B3CDDF-F207-475D-BD7B-22FF63904188</a:ObjectID>
 <a:CreationDate>1400687467</a:CreationDate>
 <a:Creator>pwl</a:Creator>
@@ -3466,7 +3455,7 @@ TableComment 0 新宋体,8,N</a:FontList>
 <o:Key Ref="o79"/>
 </c:ParentKey>
 <c:Joins>
-<o:ReferenceJoin Id="o150">
+<o:ReferenceJoin Id="o149">
 <a:ObjectID>8460A4C2-8CCF-4890-88F2-935CD5C24CA8</a:ObjectID>
 <a:CreationDate>1400687469</a:CreationDate>
 <a:Creator>pwl</a:Creator>
@@ -3483,7 +3472,7 @@ TableComment 0 新宋体,8,N</a:FontList>
 </o:Reference>
 </c:References>
 <c:DefaultGroups>
-<o:Group Id="o151">
+<o:Group Id="o150">
 <a:ObjectID>A80F5816-FACF-497C-BBED-D43AFA3967F2</a:ObjectID>
 <a:Name>PUBLIC</a:Name>
 <a:Code>PUBLIC</a:Code>
@@ -3494,7 +3483,7 @@ TableComment 0 新宋体,8,N</a:FontList>
 </o:Group>
 </c:DefaultGroups>
 <c:TargetModels>
-<o:TargetModel Id="o152">
+<o:TargetModel Id="o151">
 <a:ObjectID>D2438575-F8CF-4125-89D7-BA4962DD6850</a:ObjectID>
 <a:Name>MySQL 5.0</a:Name>
 <a:Code>MYSQL50</a:Code>

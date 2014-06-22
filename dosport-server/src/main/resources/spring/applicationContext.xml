@@ -25,13 +25,13 @@
 	<context:component-scan base-package="com.dosport.remoting.httpinvoker"  />
 	<context:component-scan base-package="com.dosport.service.remoting"  />
 	
-	<context:component-scan base-package="com.dosport.service.psn" scoped-proxy="interface"  />
+	<context:component-scan base-package="com.dosport.service.psn" scoped-proxy="interfaces"  />
 	<context:component-scan base-package="com.dosport.dao.psn" scoped-proxy="targetclass"  />
 	
-	<context:component-scan base-package="com.dosport.service.activity" scoped-proxy="interface"  />
+	<context:component-scan base-package="com.dosport.service.activity" scoped-proxy="interfaces"  />
 	<context:component-scan base-package="com.dosport.dao.activity" scoped-proxy="targetclass"  />
 	
-	<context:component-scan base-package="com.dosport.service.attachment" scoped-proxy="interface"  />
+	<context:component-scan base-package="com.dosport.service.attachment" scoped-proxy="interfaces"  />
 	<context:component-scan base-package="com.dosport.dao.attachment" scoped-proxy="targetclass"  />
 
 
