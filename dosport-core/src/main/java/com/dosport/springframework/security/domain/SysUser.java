@@ -36,12 +36,6 @@ public class SysUser implements Serializable {
 	private Integer enabled;
 	private Integer isSys;
 
-	/**
-	 * 使用@JoinTable标签的name属性注解第三方表名称；使用joinColumns属性来注解当前实体类在第三方表中的字段名称并指向该对象；
-	 * 使用inverseJoinColumns属性来注解当前实体类持有引用对象在第三方表中的字段名称并指向被引用对象表
-	 */
-	@ManyToMany(cascade = { CascadeType.PERSIST, CascadeType.MERGE })
-	@JoinTable(name = "SYS_USERS_ROLES", joinColumns = { @JoinColumn(name = "USER_ID") }, inverseJoinColumns = { @JoinColumn(name = "ROLE_ID") })
 	private Set<SysRole> roles = new LinkedHashSet<SysRole>();
 
 	@Id
@@ -91,6 +85,12 @@ public class SysUser implements Serializable {
 		this.isSys = isSys;
 	}
 
+	/**
+	 * 使用@JoinTable标签的name属性注解第三方表名称；使用joinColumns属性来注解当前实体类在第三方表中的字段名称并指向该对象；
+	 * 使用inverseJoinColumns属性来注解当前实体类持有引用对象在第三方表中的字段名称并指向被引用对象表
+	 */
+	@ManyToMany(cascade = { CascadeType.PERSIST, CascadeType.MERGE })
+	@JoinTable(name = "SYS_USER_ROLE", joinColumns = { @JoinColumn(name = "USER_ID") }, inverseJoinColumns = { @JoinColumn(name = "ROLE_ID") })
 	public Set<SysRole> getRoles() {
 		return roles;
 	}

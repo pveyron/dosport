@@ -73,6 +73,6 @@ public class SysAuthorityDao extends HibernateDao<SysAuthority, Long> {
 	 */
 	@SuppressWarnings("unchecked")
 	public List<String> queryAllAuthorityName() throws DaoException {
-		return super.createQuery("select t.name from SysAuthorities t").list();
+		return super.createQuery("select t.name from SysAuthority t").list();
 	}
 }

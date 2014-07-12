@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.1.xsd" 
+	default-lazy-init="false">
+
+	<description>Spring远程调用配置文件 </description>
+	
+	<!-- 如果是远程接口，请在接口上使用注解@Remote就可以 -->
+	<util:map id="remoteInterfaceContainer" map-class="java.util.HashMap">   
+	    <entry key="userDetailsService" value="org.springframework.security.core.userdetails.UserDetailsService"/>   
+    </util:map>
+
+</beans>

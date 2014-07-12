@@ -6,6 +6,7 @@ import com.dosport.domain.activity.Activity;
 import com.dosport.domain.activity.ActivityForm;
 import com.dosport.hibernate.domain.Page;
 import com.dosport.service.exception.ServiceException;
+import com.dosport.springframework.remoting.httpinvoker.Remote;
 
 /**
  * 发布项目Service.
@@ -13,6 +14,7 @@ import com.dosport.service.exception.ServiceException;
  * @author pwl
  * 
  */
+@Remote
 public interface ActivityService extends Serializable {
 
 	/**

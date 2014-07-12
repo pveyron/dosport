@@ -88,10 +88,8 @@
 
 	<!-- 资源源数据定义，即定义某一资源可以被哪些角色访问 -->
 	<beans:bean id="sysFilterInvocationSecurityMetadataSource"
-		class="com.dosport.springframework.security.web.access.intercept.SysFilterInvocationSecurityMetadataSource">
-		<beans:constructor-arg>
-			<beans:ref bean="remotingServiceFactory" />
-		</beans:constructor-arg>
+		class="com.dosport.springframework.security.web.access.intercept.SysFilterInvocationSecurityMetadataSource" init-method="loadResourceDefine">
+		<beans:property name="remotingServiceFactory" ref="remotingServiceFactory" />
 	</beans:bean>
 
 	<beans:bean id="sysAuthenticationSuccessHandler"

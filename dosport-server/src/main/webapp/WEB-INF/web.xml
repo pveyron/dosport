@@ -20,7 +20,7 @@
 	
 	<servlet>
        <servlet-name>httpRemoting</servlet-name>
-       <servlet-class>com.dosport.remoting.httpinvoker.RemotingHandlerServlet</servlet-class>
+       <servlet-class>com.dosport.springframework.remoting.httpinvoker.RemotingCallServlet</servlet-class>
     </servlet>
     <servlet-mapping>
        <servlet-name>httpRemoting</servlet-name>

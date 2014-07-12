@@ -35,11 +35,8 @@ public class SysRole implements Serializable {
 	private String name;
 	private Integer enabled;
 
-	@ManyToMany(cascade = { CascadeType.PERSIST, CascadeType.MERGE })
-	@JoinTable(name = "SYS_ROLES_AUTHORITIES", joinColumns = { @JoinColumn(name = "ROLE_ID") }, inverseJoinColumns = { @JoinColumn(name = "AUTHORITY_ID") })
 	private Set<SysAuthority> authorities = new LinkedHashSet<SysAuthority>();
 
-	@ManyToMany(cascade = { CascadeType.PERSIST, CascadeType.MERGE }, fetch = FetchType.LAZY, mappedBy = "roles")
 	private Set<SysUser> users = new LinkedHashSet<SysUser>();
 
 	@Id
@@ -71,6 +68,17 @@ public class SysRole implements Serializable {
 		this.enabled = enabled;
 	}
 
+	@ManyToMany(cascade = { CascadeType.PERSIST, CascadeType.MERGE })
+	@JoinTable(name = "SYS_ROLE_AUTHORITY", joinColumns = { @JoinColumn(name = "ROLE_ID") }, inverseJoinColumns = { @JoinColumn(name = "AUTHORITY_ID") })
+	public Set<SysAuthority> getAuthorities() {
+		return authorities;
+	}
+
+	public void setAuthorities(Set<SysAuthority> authorities) {
+		this.authorities = authorities;
+	}
+
+	@ManyToMany(cascade = { CascadeType.PERSIST, CascadeType.MERGE }, fetch = FetchType.LAZY, mappedBy = "roles")
 	public Set<SysUser> getUsers() {
 		return users;
 	}

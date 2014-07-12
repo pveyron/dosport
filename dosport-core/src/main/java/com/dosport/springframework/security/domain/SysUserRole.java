@@ -9,7 +9,7 @@ import javax.persistence.Table;
 /**
  * 系统用户角色关系.
  * 
- * @author linyueqin
+ * @author pwl
  * 
  */
 @Entity

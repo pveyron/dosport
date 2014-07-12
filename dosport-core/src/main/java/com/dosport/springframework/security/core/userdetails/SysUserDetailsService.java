@@ -13,7 +13,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 
-import com.dosport.remoting.httpinvoker.BaseRemotingServiceFactory;
+import com.dosport.springframework.remoting.httpinvoker.BaseRemotingServiceFactory;
 import com.dosport.springframework.security.domain.SysAuthority;
 import com.dosport.springframework.security.domain.SysUser;
 import com.dosport.springframework.security.service.UserService;

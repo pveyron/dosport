@@ -29,7 +29,7 @@ public class SysResourceDao extends HibernateDao<SysResource, Long> {
 
 		return super
 				.createQuery(
-						"select sr.value from SysResources sr where exists(select 1 from SysAuthorityResource sar where sr.id = sar.pkId.resourceId and sar.pkId.authorityId = ?)",
+						"select sr.value from SysResource sr where exists(select 1 from SysAuthorityResource sar where sr.id = sar.pkId.resourceId and sar.pkId.authorityId = ?)",
 						authorityId).list();
 	}
 }

@@ -3,6 +3,7 @@ package com.dosport.service.psn;
 import java.io.Serializable;
 
 import com.dosport.service.exception.ServiceException;
+import com.dosport.springframework.remoting.httpinvoker.Remote;
 
 /**
  * 用户信息管理Service.
@@ -10,6 +11,7 @@ import com.dosport.service.exception.ServiceException;
  * @author pwl
  * 
  */
+@Remote
 public interface PersonManager extends Serializable {
 
 	/**

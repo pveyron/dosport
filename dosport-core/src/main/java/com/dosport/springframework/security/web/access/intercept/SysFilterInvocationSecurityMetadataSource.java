@@ -17,7 +17,7 @@ import org.springframework.security.web.access.intercept.FilterInvocationSecurit
 import org.springframework.security.web.util.AntUrlPathMatcher;
 import org.springframework.security.web.util.UrlMatcher;
 
-import com.dosport.remoting.httpinvoker.BaseRemotingServiceFactory;
+import com.dosport.springframework.remoting.httpinvoker.BaseRemotingServiceFactory;
 import com.dosport.springframework.security.domain.SysAuthority;
 import com.dosport.springframework.security.service.UserService;
 
@@ -31,21 +31,11 @@ public class SysFilterInvocationSecurityMetadataSource implements FilterInvocati
 
 	private Logger logger = LoggerFactory.getLogger(getClass());
 
-	// 这里不能使用注解注入的方式，只能通过set方法和构造方法的方式注入，因为在构造方法中不能使用注入的数据
-	private UserService userService;
-
 	private UrlMatcher urlMatcher = new AntUrlPathMatcher();
 
+	private BaseRemotingServiceFactory remotingServiceFactory;
+
 	private static Map<String, Collection<ConfigAttribute>> resourceMap = null;
-
-	public SysFilterInvocationSecurityMetadataSource() {
-
-	}
-
-	public SysFilterInvocationSecurityMetadataSource(BaseRemotingServiceFactory remotingServiceFactory) {
-		this.userService = remotingServiceFactory.getMainSiteService(UserService.class);
-		loadResourceDefine();
-	}
 
 	@Override
 	public Collection<ConfigAttribute> getAllConfigAttributes() {
@@ -80,15 +70,16 @@ public class SysFilterInvocationSecurityMetadataSource implements FilterInvocati
 		return true;
 	}
 
-	protected void loadResourceDefine() {
+	public void loadResourceDefine() {
 		resourceMap = new HashMap<String, Collection<ConfigAttribute>>();
 		Collection<ConfigAttribute> atts = new ArrayList<ConfigAttribute>();
 		try {
-			List<SysAuthority> allAuthority = this.userService.getAllAuthoritiy();
+			UserService userService = this.remotingServiceFactory.getMainSiteService(UserService.class);
+			List<SysAuthority> allAuthority = userService.getAllAuthoritiy();
 			if (CollectionUtils.isNotEmpty(allAuthority)) {
 				for (SysAuthority authority : allAuthority) {
 					ConfigAttribute ca = new SecurityConfig(authority.getName());
-					List<String> urlList = this.userService.getResourceValueByAuthoritiyId(authority.getId());
+					List<String> urlList = userService.getResourceValueByAuthoritiyId(authority.getId());
 					if (CollectionUtils.isNotEmpty(urlList)) {
 						for (String url : urlList) {
 							if (resourceMap.containsKey(url)) {
@@ -106,6 +97,14 @@ public class SysFilterInvocationSecurityMetadataSource implements FilterInvocati
 		} catch (Exception e) {
 			logger.error("初始化资源所需权限出现异常：", e);
 		}
+	}
+
+	public BaseRemotingServiceFactory getRemotingServiceFactory() {
+		return remotingServiceFactory;
+	}
+
+	public void setRemotingServiceFactory(BaseRemotingServiceFactory remotingServiceFactory) {
+		this.remotingServiceFactory = remotingServiceFactory;
 	}
 
 }

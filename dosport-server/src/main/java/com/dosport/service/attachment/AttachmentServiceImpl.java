@@ -7,7 +7,6 @@ import org.springframework.transaction.annotation.Transactional;
 import com.dosport.dao.attachment.AttachmentDao;
 import com.dosport.domain.attachment.Attachment;
 import com.dosport.domain.attachment.FileUploadForm;
-import com.dosport.remoting.httpinvoker.Remote;
 import com.dosport.security.utils.SecurityUtils;
 import com.dosport.service.exception.ServiceException;
 import com.dosport.system.utils.LogUtils;
@@ -19,7 +18,6 @@ import com.dosport.system.utils.LogUtils;
  * 
  */
 @Service("attachmentService")
-@Remote(remoteInterface = AttachmentService.class)
 @Transactional(rollbackFor = Exception.class)
 public class AttachmentServiceImpl extends AbstractAttachmentComponent implements AttachmentService {
 

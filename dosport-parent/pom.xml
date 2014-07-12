@@ -13,7 +13,7 @@
 		<dosportcore.version>0.0.1</dosportcore.version>
 		<hibernate.version>3.5.6-Final</hibernate.version>
 		<hibernate-search.version>3.4.0.Final</hibernate-search.version>
-		<spring.version>3.0.5.RELEASE</spring.version>
+		<spring.version>3.1.1.RELEASE</spring.version>
 		<spring-security.version>3.0.5.RELEASE</spring-security.version>
 		<aspectj.version>1.6.9</aspectj.version>
 		<struts.version>2.1.8.1</struts.version>
@@ -500,10 +500,17 @@
 				<version>2.3.1</version>
 				<configuration>
 					<archive>
+						<index>true</index>
 						<manifest>
+							<!-- <addClasspath>true</addClasspath>
+							<mainClass></mainClass> -->
 							<addDefaultImplementationEntries>true</addDefaultImplementationEntries>
 							<addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
 						</manifest>
+						<manifestEntries>  
+				            <url>${project.url}</url>  
+				            <build-time>${maven.build.timestamp}</build-time>  
+			            </manifestEntries>  
 					</archive>
 					<outputDirectory>../dosport-jar</outputDirectory>
 				</configuration>

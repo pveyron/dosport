@@ -5,7 +5,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.dosport.dao.psn.PersonDao;
-import com.dosport.remoting.httpinvoker.Remote;
 import com.dosport.service.exception.ServiceException;
 import com.dosport.system.utils.LogUtils;
 
@@ -16,7 +15,6 @@ import com.dosport.system.utils.LogUtils;
  * 
  */
 @Service("personManager")
-@Remote(remoteInterface = PersonManager.class)
 @Transactional(rollbackFor = Exception.class)
 public class PersonManagerImpl implements PersonManager {
 

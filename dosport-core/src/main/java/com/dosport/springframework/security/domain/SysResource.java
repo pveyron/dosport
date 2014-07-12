@@ -35,7 +35,6 @@ public class SysResource implements Serializable {
 	private String value;
 	private Integer enabled;
 
-	@ManyToMany(cascade = { CascadeType.PERSIST, CascadeType.MERGE }, fetch = FetchType.LAZY, mappedBy = "resources")
 	private Set<SysAuthority> authorities = new LinkedHashSet<SysAuthority>();
 
 	@Id
@@ -85,6 +84,7 @@ public class SysResource implements Serializable {
 		this.enabled = enabled;
 	}
 
+	@ManyToMany(cascade = { CascadeType.PERSIST, CascadeType.MERGE }, fetch = FetchType.LAZY, mappedBy = "resources")
 	public Set<SysAuthority> getAuthorities() {
 		return authorities;
 	}

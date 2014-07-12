@@ -4,6 +4,7 @@ import java.io.Serializable;
 import java.util.List;
 
 import com.dosport.service.exception.ServiceException;
+import com.dosport.springframework.remoting.httpinvoker.Remote;
 import com.dosport.springframework.security.domain.SysAuthority;
 import com.dosport.springframework.security.domain.SysRole;
 import com.dosport.springframework.security.domain.SysUser;
@@ -14,6 +15,7 @@ import com.dosport.springframework.security.domain.SysUser;
  * @author pwl
  * 
  */
+@Remote
 public interface UserService extends Serializable {
 
 	/**

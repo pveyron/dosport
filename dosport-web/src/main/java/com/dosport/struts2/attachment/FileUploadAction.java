@@ -7,11 +7,11 @@ import javax.annotation.Resource;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.dosport.domain.attachment.FileUploadForm;
-import com.dosport.remoting.httpinvoker.BaseRemotingServiceFactory;
 import com.dosport.service.attachment.AttachmentService;
 import com.dosport.service.exception.FileEmptyException;
 import com.dosport.service.exception.FileSizeToLongException;
 import com.dosport.service.exception.FileTypeDenyException;
+import com.dosport.springframework.remoting.httpinvoker.BaseRemotingServiceFactory;
 import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.ModelDriven;
 import com.opensymphony.xwork2.Preparable;

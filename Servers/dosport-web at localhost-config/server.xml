@@ -131,7 +131,7 @@
                prefix="localhost_access_log." suffix=".txt" pattern="common" resolveHosts="false"/>
         -->
 
-      <Context docBase="dosport-web" path="/dosport-web" reloadable="true" source="org.eclipse.jst.jee.server:dosport-web"/></Host>
+      <Context docBase="dosport-web" path="/dosport-web" reloadable="false" source="org.eclipse.jst.jee.server:dosport-web"/></Host>
 	  
     </Engine>
   </Service>

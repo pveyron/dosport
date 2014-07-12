@@ -1,4 +1,4 @@
-package com.dosport.remoting.httpinvoker;
+package com.dosport.springframework.remoting.httpinvoker;
 
 import org.springframework.aop.framework.ProxyFactory;
 import org.springframework.beans.factory.FactoryBean;

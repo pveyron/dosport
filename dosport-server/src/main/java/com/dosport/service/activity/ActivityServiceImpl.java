@@ -13,7 +13,6 @@ import com.dosport.dao.activity.ActivityDao;
 import com.dosport.domain.activity.Activity;
 import com.dosport.domain.activity.ActivityForm;
 import com.dosport.hibernate.domain.Page;
-import com.dosport.remoting.httpinvoker.Remote;
 import com.dosport.security.utils.SecurityUtils;
 import com.dosport.service.exception.ServiceException;
 import com.dosport.service.psn.PersonManager;
@@ -28,7 +27,6 @@ import com.dosport.system.utils.LogUtils;
  * 
  */
 @Service("activityService")
-@Remote(remoteInterface = ActivityService.class)
 @Transactional(rollbackFor = Exception.class)
 public class ActivityServiceImpl implements ActivityService {
 

@@ -1,4 +1,4 @@
-package com.dosport.remoting.httpinvoker;
+package com.dosport.springframework.remoting.httpinvoker;
 
 import java.io.Serializable;
 
@@ -8,10 +8,8 @@ import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.BeanFactoryAware;
 import org.springframework.beans.factory.InitializingBean;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.util.Assert;
-
-import com.dosport.spring.beans.factory.config.ExtendedPropertyPlaceholderConfigurer;
 
 /**
  * 远程调用服务工厂.
@@ -33,13 +31,12 @@ public class BaseRemotingServiceFactory implements Serializable, InitializingBea
 	// bean工厂
 	private BeanFactory beanFactory;
 
-	@Autowired
-	private ExtendedPropertyPlaceholderConfigurer propertyConfigurer;
+	@Value("${remote.url}")
+	private String mainRemoteUrl;
 
 	public <T> T getMainSiteService(Class<T> clazz) {
 		try {
-			String serviceUrl = propertyConfigurer.mergeProperties().getProperty("remote.url");
-			return this.getServiceByUrl(serviceUrl, null, clazz);
+			return this.getServiceByUrl(mainRemoteUrl, null, clazz);
 		} catch (Exception e) {
 			logger.error("远程调用错误", e);
 		}
@@ -154,7 +151,7 @@ public class BaseRemotingServiceFactory implements Serializable, InitializingBea
 			// 得到HelloService
 			beanName = clazz.getName().substring(clazz.getName().lastIndexOf(".") + 1);
 			// 首字母小写,得到helloService
-			beanName = beanName.substring(0, 1).toLowerCase() + beanName.substring(1);
+			beanName = beanName.substring(0, 1).toLowerCase() + beanName.substring(1) + "Remoting";
 		}
 		return beanName;
 	}
@@ -182,7 +179,6 @@ public class BaseRemotingServiceFactory implements Serializable, InitializingBea
 
 	@Override
 	public void afterPropertiesSet() throws Exception {
-		// TODO Auto-generated method stub
 
 	}
 

@@ -5,6 +5,7 @@ import java.io.Serializable;
 import com.dosport.domain.attachment.Attachment;
 import com.dosport.domain.attachment.FileUploadForm;
 import com.dosport.service.exception.ServiceException;
+import com.dosport.springframework.remoting.httpinvoker.Remote;
 
 /**
  * 附件Service.
@@ -12,6 +13,7 @@ import com.dosport.service.exception.ServiceException;
  * @author pwl
  * 
  */
+@Remote
 public interface AttachmentService extends Serializable {
 
 	/**

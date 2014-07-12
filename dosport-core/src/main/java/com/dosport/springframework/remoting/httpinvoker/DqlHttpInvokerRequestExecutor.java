@@ -1,4 +1,4 @@
-package com.dosport.remoting.httpinvoker;
+package com.dosport.springframework.remoting.httpinvoker;
 
 import java.io.IOException;
 import java.net.HttpURLConnection;

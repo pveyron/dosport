@@ -30,5 +30,5 @@
     <Valve className="org.apache.catalina.valves.CometConnectionManagerValve" />
     -->
     
-    <Resource acquireIncrement="1" driverClass="com.mysql.jdbc.Driver" factory="org.apache.naming.factory.BeanFactory" initialPoolSize="1" jdbcUrl="jdbc:mysql://localhost:3306/dosport" maxIdleTime="120" maxPoolSize="2" minPoolSize="1" name="jdbc/dosport" password="root" type="com.mchange.v2.c3p0.ComboPooledDataSource" user="root"/> 
+    <Resource acquireIncrement="1" driverClass="com.mysql.jdbc.Driver" factory="org.apache.naming.factory.BeanFactory" initialPoolSize="1" jdbcUrl="jdbc:mysql://113.90.31.17:3306/dosport" maxIdleTime="120" maxPoolSize="2" minPoolSize="1" name="jdbc/dosport" password="880115" type="com.mchange.v2.c3p0.ComboPooledDataSource" user="root"/> 
 </Context>

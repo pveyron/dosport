@@ -23,7 +23,7 @@ import javax.persistence.Table;
  * 
  */
 @Entity
-@Table(name = "SYS_AUTHORITIE")
+@Table(name = "SYS_AUTHORITY")
 public class SysAuthority implements Serializable {
 
 	/**
@@ -35,11 +35,8 @@ public class SysAuthority implements Serializable {
 	private String name;
 	private Integer enabled;
 
-	@ManyToMany(cascade = { CascadeType.PERSIST, CascadeType.MERGE })
-	@JoinTable(name = "SYS_AUTHORITIES_RESOURCES", joinColumns = { @JoinColumn(name = "AUTHORITY_ID") }, inverseJoinColumns = { @JoinColumn(name = "RESOURCE_ID") })
 	private Set<SysResource> resources = new LinkedHashSet<SysResource>();
 
-	@ManyToMany(cascade = { CascadeType.PERSIST, CascadeType.MERGE }, fetch = FetchType.LAZY, mappedBy = "authorities")
 	private Set<SysRole> roles = new LinkedHashSet<SysRole>();
 
 	@Id
@@ -71,6 +68,8 @@ public class SysAuthority implements Serializable {
 		this.enabled = enabled;
 	}
 
+	@ManyToMany(cascade = { CascadeType.PERSIST, CascadeType.MERGE })
+	@JoinTable(name = "SYS_AUTHORITY_RESOURCE", joinColumns = { @JoinColumn(name = "AUTHORITY_ID") }, inverseJoinColumns = { @JoinColumn(name = "RESOURCE_ID") })
 	public Set<SysResource> getResources() {
 		return resources;
 	}
@@ -79,6 +78,7 @@ public class SysAuthority implements Serializable {
 		this.resources = resources;
 	}
 
+	@ManyToMany(cascade = { CascadeType.PERSIST, CascadeType.MERGE }, fetch = FetchType.LAZY, mappedBy = "authorities")
 	public Set<SysRole> getRoles() {
 		return roles;
 	}
